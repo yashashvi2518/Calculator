@@ -1,22 +1,33 @@
-# Compiled class file
-*.class
+import javax.swing.*;
+import java.awt.event.*;
 
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+class Calculatr
+{
+	  static double a=0,b=0,result=0;
+    static int operator=0;
+    JFrame f;
+    JTextField t;
+    JButton b1,b2,b3,b4,b5,b6,b7,b8,b9,b0,bdiv,bmul,bsub,badd,bdec,beq,bdel,bclr;
+ 
+    Calculatr()
+    {
+        f=new JFrame("Calculator");
+        t=new JTextField();
+        b1=new JButton("1");
+        b2=new JButton("2");
+        b3=new JButton("3");
+        b4=new JButton("4");
+        b5=new JButton("5");
+        b6=new JButton("6");
+        b7=new JButton("7");
+        b8=new JButton("8");
+        b9=new JButton("9");
+        b0=new JButton("0");
+        bdiv=new JButton("/");
+        bmul=new JButton("*");
+        bsub=new JButton("-");
+        badd=new JButton("+");
+        bdec=new JButton(".");
+        beq=new JButton("=");
+        bdel=new JButton("Delete");
+        bclr=new JButton("Clear");
